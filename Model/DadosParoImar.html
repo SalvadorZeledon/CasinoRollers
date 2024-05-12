@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Dados</title>
+    <link rel="stylesheet" href="/CasinoRollers/View/CSS/DadosParoImpar.css">
+    <link rel="stylesheet" href="/CasinoRollers/View/prueba.css">
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+</head>
+<body>
+    <header class="menu">
+        <nav>
+            <div class="logo">
+                <img src="/CasinoRollers/View/CSS/img/EsteBANNERbLACK.png" alt="Casino Logo">
+            </div>
+            <ul>
+                <li><a href="/CasinoRollers/Index.html">Home</a></li>
+                <li><a href="#">Soporte</a></li>
+                <li><a href="/CasinoRollers/Model/Ranking.html">Ranking</a></li>
+                <li><a href="/CasinoRollers/Model/login.html">Iniciar Sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+
+<div class="container">
+    <h1>¿Par o Impar?</h1>
+    <div class="indicaciones">
+        <h2>Indicaciones: </h2>
+        <p> Este juego consiste en tu predicción del resultado de tu dado. Primero debes escoger tu predicción
+            <br>osea "Par" o "Impar".Luego le das al botón tirar y se tiraran 2 dados, un dado lo tiras tú y el otro la casa
+            si la suma de ambos dados es igual a tu predicción entonces GANAS!. </p>
+        
+    </div>
+    <Div class="opciones">
+        <label>
+            <input type="radio" name="choice" value="par"> Par
+        </label>
+        <label>
+            <input type="radio" name="choice" value="impar"> Impar
+        </label>
+    </Div>
+    
+
+    <div class="container-img">
+        <div class="player">
+            <h2>Jugador</h2>
+            <div class="dice" id="dado1"><img class="img1" src="/CasinoRollers/View/CSS/img/dado3.jpg" alt=""></div>
+        </div>
+        <div class="player">
+            <h2>Crupier</h2>
+            <div class="dice" id="dado3"><img class="img2" src="/CasinoRollers/View/CSS/img/dado5.jpg" alt=""></div>
+        </div>
+
+
+    </div>
+        
+
+    <button onclick="rollDice()">Lanzar Dados</button>
+    <div id="result"></div>
+    <div id="mensaje"></div>
+    <div id="mensaje2"></div>
+</div>
+
+<script src="/CasinoRollers/controler/JS/DadosParoImpar.js"></script>
+
+
+<footer>
+    <p>&copy; 2024 Rollers Casino. Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,203 @@
+
+
+/* Estilos generales */
+
+*{
+    --FootNav: white;
+    --fondo: black;
+    --doradof: #eaba40;
+    --dorado: black;
+    --font: white;
+
+
+
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(https://i.pinimg.com/originals/e3/e1/b8/e3e1b84c5fdb997255cfee8160ed37b4.gif);
+}
+
+header {
+    background-color: #010100;
+    background-size: cover;
+    color: var(--font);
+    text-align: center;
+    padding: 20px 0;
+}
+
+.menu li{
+    white-space: inherit;
+}
+.menu ul li:hover{
+    background-color: #555;
+}
+
+
+/* Estilos para el logo y el nombre del casino */
+.logo {
+    display: flex;
+    align-items: center; /* Centra verticalmente el contenido */
+}
+
+.logo img {
+    height: 75px; /* Tamaño del logo */
+    width: 200px;
+    width: auto;
+    margin-right: 10px; /* Espacio entre el logo y el texto */
+}
+
+.logo h1 {
+    margin: 0; /* Elimina el margen predeterminado del encabezado */
+    color: #333; /* Color del texto */
+}
+
+/* Estilos para el menú */
+nav {
+    display: flex;
+    justify-content: space-between; /* Coloca los elementos a los extremos */
+    align-items: center; /* Centra verticalmente el contenido */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px; /* Espacio entre elementos del menú */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Resto de estilos */
+
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: var(--font);
+    text-decoration: none;
+}
+
+header h1 {
+    margin: 0;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 110px;
+}
+
+
+.NombreCasino{
+    display: flex;
+    justify-content: center;
+}
+
+.game {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    max-width: 300px;
+    text-align: center;
+}
+.game:hover{
+    margin: 15px;
+    padding:25px;
+    max-width: 305px;
+    transition: all 0.5s;
+    background-color: #e0e0e0;
+    background-size: cover;
+}
+.game h2 {
+    color: #333;
+}
+
+.game p {
+    color: #666;
+}
+
+.game a {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    margin-top: 15px;
+}
+
+
+/* Estilos para las imágenes de los juegos */
+.game img {
+    width: 100%; /* Ajusta el ancho al 100% del contenedor */
+    height: auto; /* Mantén la proporción de aspecto */
+    margin-bottom: 15px; /* Espacio entre la imagen y el contenido */
+}
+
+
+.game a:hover {
+    background-color: #555;
+}
+
+
+footer {
+    background-color: var(--dorado);
+    color: var(--font);
+    text-align: center;
+    padding: 20px 0;
+}
+
+@media screen and (max-width: 768px) {
+    .menu nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu ul {
+        margin-top: 20px;
+    }
+
+    .menu ul li {
+        margin-left: 0;
+    }
+
+    main {
+        padding: 20px 10px;
+    }
+
+    .game {
+        max-width: calc(50% - 20px);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .menu .logo img {
+        height: 40px;
+    }
+
+    .game {
+        max-width: 100%;
+    }
+}

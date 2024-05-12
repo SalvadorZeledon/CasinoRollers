@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dados Game</title>
+  <link rel="stylesheet" href="/CasinoRollers/view/CSS/NumeroMasGrande.css">
+  <link rel="stylesheet" href="/CasinoRollers/view/prueba.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href=""> 
+</head>
+<body>
+  <header class="menu">
+    <nav>
+        <div class="logo">
+            <img src="/CasinoRollers/view/CSS/img/EsteBANNERbLACK.png" alt="Casino Logo">
+        </div>
+        <ul>
+            <li><a href="/CasinoRollers/Index.html">Home</a></li>
+            <li><a href="#">Soporte</a></li>
+            <li><a href="/CasinoRollers/Model/Ranking.html">Ranking</a></li>
+            <li><a href="/CasinoRollers/Model/login.html">Iniciar Sesión</a></li>
+        </ul>
+    </nav>
+</header>
+  
+  
+  <div class="container">
+    <h1>Numero Mas Grande</h1>
+    <div class="indicaciones">
+        <h2>Indicaciones: </h2>
+        <p>Primero debes ingresar la cantidad de dinero que deseas apostar y la casa igualará la apuesta, <br>luego se tiran los dados y se suman sus resultados, el numero mas grande gana la suma de las apuestas. </p>
+        
+    </div>
+    <div class="container-img">
+      <div class="player">
+          <h2>Jugador</h2>
+          <div class="dice" id="dado1"><img class="img1" src="/CasinoRollers/view/CSS/img/dado4.jpg" alt=""></div>
+          <div class="dice" id="dado2"><img class="img2" src="/CasinoRollers/view/CSS/img/dado5.jpg" alt=""></div>
+          <div id="money2"> </div>
+          
+        </div>
+        <div class="player">
+          <h2>Crupier</h2>
+          <div class="dice" id="dado3"><img class="img3" src="/CasinoRollers/view/CSS/img/dado1.jpg" alt=""></div>
+          <div class="dice" id="dado4"><img class="img4" src="/CasinoRollers/view/CSS/img/dado6.jpg" alt=""></div>
+          <div id="money2"> </div>
+        </div>
+    </div>
+    <div id="result"></div>
+      <div id="mensaje"></div>
+      <div id="mensaje2"></div>
+    <button onclick="rollDice()">Tirar</button>
+    
+  </div>
+  <script src="/CasinoRollers/controler/JS/NumeroMasGrande.js"></script>
+
+  <footer>
+    <p>&copy; 2024 Rollers Casino. Todos los derechos reservados.</p>
+</footer>
+</body>
+</html>

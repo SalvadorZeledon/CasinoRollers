@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="/CasinoRollers/View/CSS/login.css">
+    <link rel="stylesheet" href="/CasinoRollers/View/prueba.css">
+    <title>Casino Login</title>
+</head>
+<body>
+    <div class="container-formulario inicio-sesion">
+        <div class="informacion">
+            <div class="info-bienvenida ">
+                <h2>
+                    Bienvenido! 
+                </h2>
+                <p>
+                    Casino Stadistics te recibe con los brazos abiertos.
+
+                </p>
+                <p>
+                    Disfruta con responsabilidad.
+                </p>
+                <input type="button" value="Registrarse" id="btnRegistro">
+            </div>
+        </div>
+        <div class="info-login">
+            <div class="info-login-mini">
+                <h2>Iniciar Sesión</h2>
+                <div class="info-iconos">
+                    <i class='bx bxl-google'></i>
+                    <i class='bx bxl-facebook' ></i>
+                    <i class='bx bxl-github' ></i>
+                </div>
+                <p>Puedes usar tu Email para registrarte.</p>
+
+                <form class="formulario">
+                    <label>
+                        <i class='bx bx-envelope' ></i>
+                        <input type="email" placeholder="Email">
+                    </label>
+
+                    <label for="">
+                        <i class='bx bxs-lock'></i>
+                        <input type="password" placeholder="Password">
+                    </label>
+                    <input type="submit" value="Iniciar Sesion" id="btnInicioSesion">
+                    <input type="button" value="Ir" id="botonRedireccionar">
+                
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container-formulario invisible registro">
+        <div class="informacion">
+            <div class="info-bienvenida">
+                <h2>
+                    Bienvenido de nuevo! 
+                </h2>
+                <p>
+                    Antes de comenzar a jugar debemos recopilar ciertos datos que identifican a toda personal 
+                    civil (Nombre, Email, Dui, etc.)
+                </p>
+                <input type="submit" value="Iniciar Sesion" id="btnInicioSesionR">
+            </div>
+        </div>
+        <div class="info-login">
+            <div class="info-login-mini">
+                <h2>Crear Cuenta</h2>
+                <p>Puedes usar tu Email para registrarte.</p>
+
+                <form class="formulario" action="/CasinoRollers/Controler/nuevoRegistro.php" method="POST">
+                    <label>
+                        <i class='bx bx-user' ></i>
+                        <input type="text" placeholder="Nombre completo" name="nombre">
+                    </label>
+                
+                    <label>
+                        <i class='bx bx-envelope' ></i>
+                        <input type="date" placeholder="Edad" name="edad">
+                    </label>
+                
+                    <label>
+                        <i class='bx bx-envelope' ></i>
+                        <input type="email" placeholder="Email" name="email">
+                    </label>
+                
+                    <label for="">
+                        <i class='bx bxs-lock'></i>
+                        <input type="password" placeholder="Password" name="password">
+                    </label>
+                    <input type="submit" value="Registrarse" id="btnRegistroR">
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="/CasinoRollers/Controler/JS/login.js"></script>
+</html>

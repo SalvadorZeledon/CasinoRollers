@@ -1,0 +1,96 @@
+/* Reset de estilos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos para el cuerpo del documento */
+body {
+  font-family: Arial, sans-serif;
+  background-image: url(https://i.pinimg.com/originals/e3/e1/b8/e3e1b84c5fdb997255cfee8160ed37b4.gif);
+}
+
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.indicaciones {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.container-img {
+  display: flex;
+  justify-content: space-around;
+  align-items: center; /* Centra verticalmente los elementos */
+  margin-bottom: 20px;
+}
+
+.player {
+  text-align: center;
+  flex: 1; /* Ajusta el ancho de los jugadores */
+}
+
+.dice {
+  width: 140px; /* Tamaño reducido de los dados */
+  height: 140px; /* Tamaño reducido de los dados */
+  background-color: #f9f9f9;
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+   /* Espacio entre los dados */
+}
+
+.dice img {
+  max-width: 100%; /* Tamaño reducido de las imágenes de los dados */
+  max-height: 100%; /* Tamaño reducido de las imágenes de los dados */
+}
+
+button {
+  display: block;
+  width: 200px; /* Ancho del botón */
+  margin: 0 auto; /* Centrado horizontal */
+  padding: 15px 0;
+  font-size: 20px;
+  text-align: center;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#result, #mensaje, #mensaje2 {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+}

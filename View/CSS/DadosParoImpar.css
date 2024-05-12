@@ -1,0 +1,103 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+}
+
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+}
+
+/* Estilos de los botones */
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Estilos de los dados */
+.container-img {
+  display: flex;
+  justify-content: space-around;
+}
+
+.player {
+  text-align: center;
+}
+
+.dice {
+  width: 200px; /* Ajuste de tamaño */
+  height: 200px; /* Ajuste de tamaño */
+  border-radius: 50%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.img1, .img2 {
+  width: 150px; /* Ajuste de tamaño */
+  height: 150px; /* Ajuste de tamaño */
+}
+
+/* Estilos para el botón "Tirar" */
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 15px 30px; /* Ajuste de tamaño */
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: block; /* Para centrar el botón */
+  margin: 0 auto; /* Para centrar el botón */
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Estilos para los radios */
+.opciones {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.opciones label {
+  margin: 0 10px;
+  font-size: 18px;
+}
+
+/* Estilos para el resultado */
+#result {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 24px;
+}
+
+/* Estilos para el mensaje */
+#mensaje, #mensaje2 {
+  text-align: center;
+  margin-top: 10px;
+}
