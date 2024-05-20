@@ -13,8 +13,8 @@ function rollDice() {
 
     lanzamientoDeDados(dado1, dado2, function() {
         //con este mostramos los resultados de los dados despues de generar la animacion.
-        document.querySelector(".img1").setAttribute("src","/CasinoRollers/view/CSS/img/dado" + dado1 + ".jpg");
-        document.querySelector(".img2").setAttribute("src","/CasinoRollers/view/CSS/img/dado" + dado2 + ".jpg");
+        document.querySelector(".img1").setAttribute("src","/CasinoRollers/view/CSS/img/dado" + dado1 + ".png");
+        document.querySelector(".img2").setAttribute("src","/CasinoRollers/view/CSS/img/dado" + dado2 + ".png");
     });
 
     resutlados(bet, total);
@@ -37,7 +37,7 @@ function lanzamientoDeDados(dado1, dado2, callback) {
     
         const animacion = setInterval(() => {
             currentImageIndex = (currentImageIndex % numImages) + 1; // Avanza al siguiente valor del dado
-            const imageUrl = `/CasinoRollers/view/CSS/img/dado${currentImageIndex}.jpg`; // Ruta de la imagen correspondiente al valor actual del dado
+            const imageUrl = `/CasinoRollers/view/CSS/img/dado${currentImageIndex}.png`; // Ruta de la imagen correspondiente al valor actual del dado
             dice.querySelector('img').setAttribute('src', imageUrl); // Cambiar la imagen y mostrarla en el HTML
     
             tiempoTranscurrido += interval;

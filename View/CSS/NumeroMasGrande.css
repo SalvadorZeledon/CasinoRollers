@@ -6,9 +6,10 @@
 }
 
 /* Estilos para el cuerpo del documento */
-body {
-  font-family: Arial, sans-serif;
-  background-image: url(https://i.pinimg.com/originals/e3/e1/b8/e3e1b84c5fdb997255cfee8160ed37b4.gif);
+
+body{
+  background-image: url(/CasinoRollers/View/CSS/img/FondoRC6.png);
+  background-size: 1515px;
 }
 
 .container {
@@ -20,10 +21,28 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 h1 {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  background-color: #e0ac1c;
+  border-radius: 100px;
+  padding: 6px;
+  margin: 25px;
   font-size: 32px;
   text-align: center;
   margin-bottom: 20px;
+  font-size: 40px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Dancing+Script:wght@400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+h1 span{
+  font-family: "Alex Brush", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+  font-size: 40px;
 }
 
 h2 {
@@ -37,10 +56,12 @@ p {
 }
 
 .indicaciones {
-  background-color: #f9f9f9;
+  background-color: #333;
+  color: white;
   padding: 20px;
   border-radius: 10px;
   margin-bottom: 20px;
+  text-align: justify;
 }
 
 .container-img {
@@ -77,8 +98,8 @@ button {
   padding: 15px 0;
   font-size: 20px;
   text-align: center;
-  background-color: #007bff;
-  color: #fff;
+  background-color: #e0ac1c;
+  color: black;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -94,3 +115,44 @@ button:hover {
   text-align: center;
   margin-bottom: 20px;
 }
+
+footer {
+  background-color: var(--dorado);
+  color: var(--font);
+  text-align: center;
+  padding: 20px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .menu nav {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .menu ul {
+      margin-top: 20px;
+  }
+
+  .menu ul li {
+      margin-left: 0;
+  }
+
+  main {
+      padding: 20px 10px;
+  }
+
+  .game {
+      max-width: calc(50% - 20px);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .menu .logo img {
+      height: 40px;
+  }
+
+  .game {
+      max-width: 100%;
+  }
+}
+

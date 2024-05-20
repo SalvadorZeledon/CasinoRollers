@@ -9,10 +9,10 @@ function rollDice() {
   let total2 = dado3 + dado4;
 
   lanzamientoDeDados(dado1, dado2, dado3, dado4, function() {
-    document.querySelector(".img1").setAttribute("src","/CasinoRollers/view/CSS/img/dado" + dado1 + ".jpg");
-    document.querySelector(".img2").setAttribute("src","/CasinoRollers/view/CSS/img/dado" + dado2 + ".jpg");
-    document.querySelector(".img3").setAttribute("src","/CasinoRollers/view/CSS/img/dado" + dado3 + ".jpg");
-    document.querySelector(".img4").setAttribute("src","/CasinoRollers/view/CSS/img/dado" + dado4 + ".jpg");
+    document.querySelector(".img1").setAttribute("src","/CasinoRollers/view/CSS/img/dado" + dado1 + ".png");
+    document.querySelector(".img2").setAttribute("src","/CasinoRollers/view/CSS/img/dado" + dado2 + ".png");
+    document.querySelector(".img3").setAttribute("src","/CasinoRollers/view/CSS/img/dado" + dado3 + ".png");
+    document.querySelector(".img4").setAttribute("src","/CasinoRollers/view/CSS/img/dado" + dado4 + ".png");
 
     WinSelector(total1,total2);
   });
@@ -34,7 +34,7 @@ function lanzamientoDeDados(dado1, dado2, dado3, dado4, callback) {
 
     const animacion = setInterval(() => {
       currentImageIndex = (currentImageIndex % numImages) + 1; // Avanza al siguiente valor del dado
-      const imageUrl = `/CasinoRollers/view/CSS/img/dado${currentImageIndex}.jpg`; // Ruta de la imagen correspondiente al valor actual del dado
+      const imageUrl = `/CasinoRollers/view/CSS/img/dado${currentImageIndex}.png`; // Ruta de la imagen correspondiente al valor actual del dado
       dice.querySelector('img').setAttribute('src', imageUrl); // Cambiar la imagen y mostrarla en el HTML
 
       tiempoTranscurrido += interval;

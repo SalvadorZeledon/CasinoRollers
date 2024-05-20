@@ -5,26 +5,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Casino Games Catalog</title>
     <link rel="stylesheet" href="/CasinoRollers/View/CSS/Style_Index/styleindex.css">
-    
-
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link rel="icon" href="View/CSS/img/LogoRollersCasinoICO.ico">
+    <link rel="stylesheet" href="/CasinoRollers/View/prueba.css">
 </head>
 <body>
-    <header class="menu">
-        <nav>
-            <div class="logo">
-                <img src="/CasinoRollers/View/CSS/img/EsteBANNERbLACK.png" alt="Casino Logo">
-            </div>
-            <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="#">Soporte</a></li>
-                <li><a href="/CasinoRollers/Model/Ranking.html">Ranking</a></li>
-                <li><a href="/CasinoRollers/Model/login.html">Iniciar Sesión</a></li>
+    
+    <!-- <header class="header">
+        <div class="logo">
+            <img src="/CasinoRollers/View/CSS/img/EsteBANNERbLACK.png" alt="Loco CR">
+        </div>
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li class="li_links"><a href="mailto:rollers.casino.sv@gmail.com" class="link">Soporte</a></li>
+                <li class="li_links"><a href="/CasinoRollers/Model/Ranking.html" class="link">Ranking</a></li>
+                <li class="li_links"><a href="/CasinoRollers/Model/login.html" class="link">Cerrar Sesión</a></li>
             </ul>
+
+           <label class="labe-hamburguesa" for="menu-hamburguesa" >
+             <svg xmlns="http://www.w3.org/2000/svg" 
+             width="50" 
+             height="50" 
+             fill="currentColor" 
+             class="list-icon" 
+             viewBox="0 0 16 16">
+            
+             <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+             </svg>
+           </label class="menu-hamburguesa" >
+
+           <input class="menu-hamburguesa" type="checkbox" name="" id="menu-hamburguesa">
+
         </nav>
-    </header>
+    </header> -->
+
+    <header class="header">
+            <nav class="navbar">
+                <img src="/CasinoRollers/View/CSS/img/EsteBANNERbLACK.png" alt="Logo CR" class="logo">
+
+                <label class="labe_hamburguesa" for="menu_hamburguesa">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="35"
+                        height="35"
+                        fill="currentColor"
+                        class="list_icon"
+                        viewBox="0 0 16 16"
+                    >
+                        <path
+                            fill-rule="evenodd"
+                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+                        />
+                    </svg>
+                </label>
+
+                <input class="menu_hamburguesa" type="checkbox" name="" id="menu_hamburguesa">
+
+                <ul class="ul_links">
+                    <li class="li_links"><a href="mailto:rollers.casino.sv@gmail.com" class="link">Soporte</a></li>
+                    <li class="li_links"><a href="/CasinoRollers/Model/Ranking.html" class="link">Ranking</a></li>
+                    <li class="li_links"><a href="/CasinoRollers/Model/login.html" class="link">Cerrar Sesión</a></li>
+                </ul>
+            </nav>
+        </header>
     
     <div class="NombreCasino">
-        <h1>Catalogo de juegos.</h1>
+        <h1>CATALOGO DE JUEGOS</h1>
     </div>
     
     <main>
@@ -48,9 +94,42 @@
             <a href="/CasinoRollers/Model/NumeroMasGrande.html">Jugar ahora</a>
         </section>
     </main>
-    
-    <footer>
-        <p>&copy; 2024 Rollers Casino. Todos los derechos reservados.</p>
-    </footer>
+
+   
 </body>
+
+<footer class="footer-distributed">
+
+    <div class="footer-left">
+        <h3>Rollers<span>Casino</span></h3>
+
+        <p class="footer-links">
+            <a href="#">Home</a>
+        </p>
+
+        <p class="footer-company-name">Copyright © 2024 <strong>RollersCasino</strong> Todos los derechos reservados</p>
+    </div>
+
+    <div class="footer-center">
+        <div>
+            <i class="fa fa-map-marker"></i>
+            <p><span>Dirección</span>
+                Universidad de Sonsonate</p>
+        </div>
+
+        <div>
+            <i class="fa fa-envelope"></i>
+            <p><a href="mailto:rollers.casino.sv@gmail.com">rollers.casino.sv@gmail.com</a></p>
+        </div>
+    </div>
+    <div class="footer-right">
+        <p class="footer-company-about">
+            <span>Acerca de la compañia</span>
+            <strong>RollersCasino</strong> es un empresa dedicada ala creacion de juegos online sin fines de lucro, todo para satisfacer el entretenimiento de las personas.
+        </p>
+        
+    </div>
+</footer>
+
+
 </html>

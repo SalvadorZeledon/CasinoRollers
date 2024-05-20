@@ -1,9 +1,12 @@
 /* Estilos generales */
+nav li {
+  padding: 20px;
+  border-radius: 5px;
+}
+
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f2f2f2;
+  background-image: url(../CSS/img/FondoRC6.png);
+  background-size: 1500px;
 }
 
 .container {
@@ -15,8 +18,26 @@ body {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 h1 {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  border-radius: 100px;
+  padding: 6px;
+  margin: 25px;
+  font-size: 50px;
   text-align: center;
+  margin-bottom: 20px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Dancing+Script:wght@400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+h1 span{
+  font-family: "Alex Brush", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: #e0ac1c;
+  font-size: 50px;
 }
 
 /* Estilos de los botones */
@@ -47,8 +68,8 @@ button:hover {
 .dice {
   width: 200px; /* Ajuste de tamaño */
   height: 200px; /* Ajuste de tamaño */
-  border-radius: 50%;
-  background-color: #fff;
+  border-radius: 10%;
+  background-color: #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -57,25 +78,33 @@ button:hover {
 }
 
 .img1, .img2 {
-  width: 150px; /* Ajuste de tamaño */
-  height: 150px; /* Ajuste de tamaño */
+  width: 170px; /* Ajuste de tamaño */
+  height: 170px; /* Ajuste de tamaño */
+}
+
+.indicaciones {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  text-align: justify;
 }
 
 /* Estilos para el botón "Tirar" */
 button {
-  background-color: #007bff;
-  color: #fff;
+  display: block;
+  width: 200px; /* Ancho del botón */
+  margin: 0 auto; /* Centrado horizontal */
+  padding: 15px 0;
+  font-size: 20px;
+  text-align: center;
+  background-color: #e0ac1c;
+  color: black;
   border: none;
-  padding: 15px 30px; /* Ajuste de tamaño */
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s;
-  display: block; /* Para centrar el botón */
-  margin: 0 auto; /* Para centrar el botón */
-}
-
-button:hover {
-  background-color: #0056b3;
+  transition: background-color 0.3s ease;
 }
 
 /* Estilos para los radios */
@@ -86,7 +115,21 @@ button:hover {
 
 .opciones label {
   margin: 0 10px;
-  font-size: 18px;
+  font-size: 25px;
+  margin: 35px;
+  display: inline-flex;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 8px;
+  background-color: #e0ac1c;
+  border-radius: 5px;
+  padding-right: 20px;
+}
+
+.opciones label input {
+  color: transparent;
+  height: 20px;
+  line-height: 20px;
+  width: 18px;
 }
 
 /* Estilos para el resultado */
@@ -100,4 +143,54 @@ button:hover {
 #mensaje, #mensaje2 {
   text-align: center;
   margin-top: 10px;
+}
+
+
+
+
+/* APARTIR DE ACA ES EL FOOTER*/
+footer {
+  background-color: var(--dorado);
+  color: var(--font);
+  text-align: center;
+  padding: 20px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .menu nav {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .menu ul {
+      margin-top: 20px;
+  }
+
+  .menu ul li {
+      margin-left: 0;
+  }
+
+  main {
+      padding: 20px 10px;
+  }
+
+  .game {
+      max-width: calc(50% - 20px);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .menu .logo img {
+      height: 40px;
+  }
+
+  .game {
+      max-width: 100%;
+  }
+}
+
+
+footer {
+  position: fixed;
+  bottom: 0;
 }
