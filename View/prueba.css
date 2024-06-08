@@ -9,85 +9,7 @@
     --font: white;
 }
 
-/* 
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
 
-header {    
-    background-color: black;
-    display: flex;
-    background-size: cover;
-    color: var(--font);
-    text-align: center;
-    padding: 20px 0;
-}
-
-.navbar{
-    flex-wrap: wrap;
-    position: relative;
-}
-
-.nav-links{
-    width: 100%;
-    position: absolute;
-    top: var(--altura_header);
-}
-.logo{
-    margin-left: 30px;
-    cursor: pointer;
-  }
-
-.logo h1 {
-    margin: 0;          Elimina el margen predeterminado del encabezado 
-    color: #333;        Color del texto 
-}
-
-.header .logo img {
-    height: 75px;        Tamaño del logo
-    width: 200px;
-    width: auto;
-    margin-right: 10px;       Espacio entre el logo y el texto
-    transition: all 0,3s;
-}
-
-.header .logo img:hover{
-    transform: scale(1.2);
-}
-
-.header .nav-links{
-    display: inline-block;
-}
-
-.header .nav-links li{
-    display: inline-block;
-    padding: 13px;
-    border-radius: 5px;
-    margin-left: 10px;           Espacio entre elementos del menú
-}
-
-.header .nav-links a{
-    color: white;
-    text-decoration: none;
-    padding: 20px;
-    margin: 5px;
-    border-radius: 5px;
-}
-
-.header .nav-links li:hover{
-    transform: scale(1.1);
-}
-
-.header .nav-links li a:hover{
-    color: #e0ac1c;
-}
-
-.menu-hamburguesa{
-    display: none;
-
-} */
 
 :root {
     --color_primario: black;
@@ -257,17 +179,6 @@ ol,ul{
     }
 }
 
-/* footer {
-    background-color: var(--dorado);
-    color: var(--font);
-    text-align: center;
-    padding: 20px 0;
-    position: absolute;
-    bottom: 0;
-    height: 55%;
-    padding: 100%;
-} */
-
 
 @media (max-height:800px) {
     footer {
@@ -393,6 +304,11 @@ ol,ul{
     font-size: 18px;
     font-weight: bold;
     margin-bottom: 20px;
+}
+
+strong{
+    color: #e0ac1c;
+
 }
 
 @media (max-width: 880px) {

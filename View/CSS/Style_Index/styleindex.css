@@ -1,5 +1,3 @@
-
-
 /* Estilos generales */
 
 *{
@@ -12,7 +10,7 @@
 }
 
 body {
-    background-image: url(../img/FondoRC5.png);
+    background-image: url(../img/FondoRC6.png);
     background-size: 1500px;
 }
 
@@ -206,7 +204,3 @@ footer {
         max-width: 100%;
     }
 }
-
-
-
-        

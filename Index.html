@@ -3,133 +3,203 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Casino Games Catalog</title>
-    <link rel="stylesheet" href="/CasinoRollers/View/CSS/Style_Index/styleindex.css">
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
-    <link rel="icon" href="View/CSS/img/LogoRollersCasinoICO.ico">
-    <link rel="stylesheet" href="/CasinoRollers/View/prueba.css">
+    <link rel="stylesheet" href="View/CSS/login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+    
+    <title>Casino Login</title>
 </head>
 <body>
-    
-    <!-- <header class="header">
-        <div class="logo">
-            <img src="/CasinoRollers/View/CSS/img/EsteBANNERbLACK.png" alt="Loco CR">
-        </div>
-        <nav class="navbar">
-            <ul class="nav-links">
-                <li class="li_links"><a href="mailto:rollers.casino.sv@gmail.com" class="link">Soporte</a></li>
-                <li class="li_links"><a href="/CasinoRollers/Model/Ranking.html" class="link">Ranking</a></li>
-                <li class="li_links"><a href="/CasinoRollers/Model/login.html" class="link">Cerrar Sesión</a></li>
-            </ul>
-
-           <label class="labe-hamburguesa" for="menu-hamburguesa" >
-             <svg xmlns="http://www.w3.org/2000/svg" 
-             width="50" 
-             height="50" 
-             fill="currentColor" 
-             class="list-icon" 
-             viewBox="0 0 16 16">
-            
-             <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
-             </svg>
-           </label class="menu-hamburguesa" >
-
-           <input class="menu-hamburguesa" type="checkbox" name="" id="menu-hamburguesa">
-
-        </nav>
-    </header> -->
-
-    <header class="header">
-            <nav class="navbar">
-                <img src="/CasinoRollers/View/CSS/img/EsteBANNERbLACK.png" alt="Logo CR" class="logo">
-
-                <label class="labe_hamburguesa" for="menu_hamburguesa">
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="35"
-                        height="35"
-                        fill="currentColor"
-                        class="list_icon"
-                        viewBox="0 0 16 16"
-                    >
-                        <path
-                            fill-rule="evenodd"
-                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
-                        />
-                    </svg>
-                </label>
-
-                <input class="menu_hamburguesa" type="checkbox" name="" id="menu_hamburguesa">
-
-                <ul class="ul_links">
-                    <li class="li_links"><a href="mailto:rollers.casino.sv@gmail.com" class="link">Soporte</a></li>
-                    <li class="li_links"><a href="/CasinoRollers/Model/Ranking.html" class="link">Ranking</a></li>
-                    <li class="li_links"><a href="/CasinoRollers/Model/login.html" class="link">Cerrar Sesión</a></li>
-                </ul>
-            </nav>
-        </header>
-    
-    <div class="NombreCasino">
-        <h1>CATALOGO DE JUEGOS</h1>
+<div class="container-formulario inicio-sesion">
+    <!-- Formulario de inicio de sesión -->
+    <div class="informacion">
+      <div class="info-bienvenida ">
+        <h2>Bienvenido!</h2>
+        <p>Rollers Casino te recibe con los brazos abiertos.</p>
+        <p>Disfruta con responsabilidad.</p>
+        <input type="button" value="Registrarse" id="btnRegistro">
+      </div>
     </div>
-    
-    <main>
-        
-        <section class="game">
-            <div class="img1">
-                <img src="/CasinoRollers/View/CSS/img/BannerParoImparUNOF.png" alt="Dados par o impar">
-            </div>
-            <h2>Par o Impar</h2>
+    <div class="info-login">
+      <div class="info-login-mini">
+        <h2>Iniciar Sesión</h2>
+        <p>Puedes usar tu Email para registrarte.</p>
+        <form class="formulario-login formulario" id="formInicioSesion" method="POST" action="javascript:void(0)">
+          <label>
+            <i class='bx bx-envelope'></i>
+            <input type="email" placeholder="Email@gmail.com" id="email" name="email">
+          </label>
+          <label>
+            <i class='bx bxs-lock'></i>
+            <input type="password" placeholder="Password" id="password" name="password">
+          </label>
+          
+          <div class="terminosycondiciones"> 
+            <input type="checkbox" id="terms" name="terms">
+            <a href="Model/terminosycondiciones.html"><p>Acepto los términos y condiciones. </p></a>
+          </div>
             
-            <p>¡Adivina si la suma de los dados será par o impar y gana grandes premios!</p>
-            <a href="/CasinoRollers/Model/DadosParoImar.html">Jugar ahora</a>
-        </section>
-        
-        <section class="game">
-            <div class="img2">
-                <img src="/CasinoRollers/View/CSS/img/BannerCasinoNumGrandeUF.png" alt="Dados par o impar">
-            </div>
-            <h2>Número más Grande</h2>
-            <p>Intenta adivinar cuál será el número más grande y gana emocionantes premios.</p>
-            <a href="/CasinoRollers/Model/NumeroMasGrande.html">Jugar ahora</a>
-        </section>
-    </main>
+          
+          
+          <input type="submit" value="Iniciar Sesión" id="btnInicioSesion">
+          <div class="alerta-error">Todos los campos son obligatorios</div>
+          <div class="alerta-exito">Te registraste correctamente</div>
 
-   
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Formulario de registro -->
+  <div class="container-formulario hide registro">
+    <div class="informacion">
+      <div class="info-bienvenida">
+        <h2>Bienvenido de nuevo!</h2>
+        <p>Antes de comenzar a jugar debemos recopilar ciertos datos que identifican a toda persona 
+          civil (Nombre, Email, Dui, etc.)
+        </p>
+        <input type="submit" value="Iniciar Sesion" id="btnInicioSesionR">
+      </div>
+    </div>
+    <div class="info-login">
+      <div class="info-login-mini">
+        <h2>Crear Cuenta</h2>
+        <p>Puedes usar tu correo electronico para registrarte.</p>
+        <form class="formulario-registro formulario form form-register" id="formRegistro" method="POST" action="javascript:void(0)">
+          <div>
+            <label>
+              <i class='bx bx-user'></i>
+              <input type="text" placeholder="Nombre Usuario" id="userName" name="userName">
+            </label>
+          </div>
+          <div>
+            <label>
+              <i class='bx bx-user'></i>
+              <input type="number" placeholder="<18" id="edad" name="edad">
+            </label>
+          </div>
+          <div>
+            <label>
+              <i class='bx bx-envelope'></i>
+              <input type="email" placeholder="Correo Electronico" id="email2" name="email2">
+            </label>
+          </div>
+          <div>
+            <label>
+              <i class='bx bx-lock-alt'></i>
+              <input type="password" placeholder="Contraseña" id="password2" name="password2">
+            </label>
+          </div>
+          <input type="submit" value="Registrarse" id="btnRegistroR">
+          <div class="alerta-error">Todos los campos son obligatorios</div>
+          <div class="alerta-exito">Te registraste correctamente</div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="Controler/JS/register.js"></script>
+  <script src="Controler/JS/formularioLogin.js"></script>
+  <script src="Controler/JS/login.js"></script>
+  
 </body>
 
-<footer class="footer-distributed">
+    <script>
 
-    <div class="footer-left">
-        <h3>Rollers<span>Casino</span></h3>
+document.addEventListener("DOMContentLoaded", function() {
+    // Función para iniciar sesión
+function iniciarSesion() {
+    // Obtener los datos del formulario
+    const email = document.getElementById("email").value;
+    const password = document.getElementById("password").value;
 
-        <p class="footer-links">
-            <a href="#">Home</a>
-        </p>
+    // Crear un objeto FormData con los datos del formulario
+    const formData = new FormData();
+    formData.append("email", email);
+    formData.append("password", password);
 
-        <p class="footer-company-name">Copyright © 2024 <strong>RollersCasino</strong> Todos los derechos reservados</p>
-    </div>
+    // Realizar la solicitud AJAX
+    fetch("Controler/iniciosesion.php", {
+        method: "POST",
+        body: formData
+    })
+    .then(response => response.json())
+    .then(data => {
+        // Verificar si el inicio de sesión fue exitoso
+        if (data.userId) {
+            // Mostrar mensaje de éxito y redirigir al usuario
+            alert("Inicio de sesión exitoso. Bienvenido, " + data.userName + "!");
+            window.location.href = "Model/principal.php";
+        } else {
+            // Mostrar mensaje de error
+            alert("El usuario o la contraseña son incorrectos. Por favor, inténtalo de nuevo.");
+        }
+    })
+    .catch(error => {
+        // Manejar errores de la solicitud AJAX
+        alert("Error al iniciar sesión. Por favor, inténtalo de nuevo ms tarde.");
+    });
+}
 
-    <div class="footer-center">
-        <div>
-            <i class="fa fa-map-marker"></i>
-            <p><span>Dirección</span>
-                Universidad de Sonsonate</p>
-        </div>
+// Event listener para el formulario de inicio de sesin
+document.querySelector("#btnInicioSesion").addEventListener("click", function(event) {
+    event.preventDefault(); // Evitar el envío del formulario por defecto
+    iniciarSesion(); // Llamar a la función para iniciar sesin
+});
+});
 
-        <div>
-            <i class="fa fa-envelope"></i>
-            <p><a href="mailto:rollers.casino.sv@gmail.com">rollers.casino.sv@gmail.com</a></p>
-        </div>
-    </div>
-    <div class="footer-right">
-        <p class="footer-company-about">
-            <span>Acerca de la compañia</span>
-            <strong>RollersCasino</strong> es un empresa dedicada ala creacion de juegos online sin fines de lucro, todo para satisfacer el entretenimiento de las personas.
-        </p>
-        
-    </div>
-</footer>
+</script>
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function() {
+   // Función para realizar el registro
+function registrarUsuario() {
+    // Obtener los datos del formulario de registro
+    const nombre = document.getElementById("userName").value;
+    const edad = document.getElementById("edad").value;
+    const email = document.getElementById("email2").value;
+    const password = document.getElementById("password2").value;
+
+    // Crear un objeto FormData con los datos del formulario
+    const formData = new FormData();
+    formData.append("userName", nombre);
+    formData.append("edad", edad);
+    formData.append("email2", email);
+    formData.append("password2", password);
+
+    // Realizar la solicitud AJAX para registrar al usuario
+    fetch("Controler/nuevoRegistro.php", {
+        method: "POST",
+        body: formData
+    })
+    .then(response => response.text())
+    .then(message => {
+        // Mostrar mensaje de éxito o error
+        alert(message);
+        // Redirigir al usuario a la pgina de inicio de sesión
+        window.location.href = "index.php";
+    })
+    .catch(error => {
+        // Mostrar mensaje de error si falla la solicitud AJAX
+        console.error("Error al registrar usuario:", error);
+        alert("Error al registrar usuario. Por favor, intntalo de nuevo más tarde.");
+    });
+}
+
+// Event listener para el formulario de registro
+document.querySelector("#btnRegistroR").addEventListener("click", function(event) {
+    event.preventDefault(); // Evitar el envío del formulario por defecto
+    registrarUsuario(); // Llamar a la función para registrar al usuario
+});
+});
+
+</script>
+
+
 
 
 </html>

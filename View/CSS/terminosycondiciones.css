@@ -28,14 +28,36 @@ section {
     margin: 60px;
 }
 
-h1{
+h1 {
     color: white;
 }
-h1 span{
+
+h1 span {
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: #e0ac1c;
 }
 
-footer{
+footer {
     border-radius: 5px;
 }
+.footer-terminosycondiciones{
+    color:white;
+    
+}
+
+/* Media query para pantallas iguales o menores a 768px de ancho */
+@media (max-width: 768px) {
+    body {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    main {
+        margin-top: 20px;
+    }
+    
+    section {
+        margin: 20px;
+    }
+}
+

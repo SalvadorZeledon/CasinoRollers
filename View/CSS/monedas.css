@@ -1,0 +1,15 @@
+/* Estilos para el contenedor principal */
+.monedas-container {
+    position: absolute;
+    top: 170px; /* Ajusta el valor según la altura del navbar */
+    right: 20px;
+    display: flex;
+    align-items: center;
+    z-index: 900; /* Un valor menor que el del navbar */
+}
+
+/* Estilos para la imagen de la moneda */
+.moneda-img {
+    width: 30px;
+    margin-right: 5px;
+}

@@ -8,9 +8,10 @@
 /* Estilos para el cuerpo del documento */
 
 body{
-  background-image: url(/CasinoRollers/View/CSS/img/FondoRC6.png);
+  background-image: url(img/FondoRC6.png);
   background-size: 1515px;
 }
+
 
 .container {
   max-width: 800px;

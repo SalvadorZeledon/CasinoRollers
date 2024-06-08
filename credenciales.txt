@@ -1,0 +1,29 @@
+CREDENCIALES SERVIDOR ACCESO SSH: 
+IP: 157.173.193.5
+user: root  
+password: IRj1g9E2709Enmntsp1s
+
+CREDENCIALES SERVIDOR DESDE CYBERPANEL: 
+IP: 157.173.193.5:8090
+user: admin
+password: tLzXwBK7EMXDc6qq
+
+CREDENCIALES BASE DE DATOS MARIADB: 
+user: anonymus
+password: CRek*Gx!C7ePaf]A
+
+''''''''''''''''''''''''''''''''''''''
+CREDENCIALES PERSONALIZADAS (solicitadas por el ingeniero Daro):
+CREDENCIALES PARA CYBERPANEL: 
+user: daro.arias
+password: Pa55word
+
+CREDENCIALES EMAIL EMPRESARIAL: 
+user: daro.arias@rollerscasinosv.com
+passwrod: Pa55word
+
+
+
+
+
+

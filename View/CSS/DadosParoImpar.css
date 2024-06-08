@@ -5,7 +5,7 @@ nav li {
 }
 
 body {
-  background-image: url(../CSS/img/FondoRC6.png);
+  background-image: url(/View/CSS/img/FondoRC5.png);
   background-size: 1500px;
 }
 
@@ -67,7 +67,7 @@ button:hover {
 
 .dice {
   width: 200px; /* Ajuste de tamaño */
-  height: 200px; /* Ajuste de tamaño */
+  height: 200px; /* Ajuste de tamao */
   border-radius: 10%;
   background-color: #ffffff;
   display: flex;
@@ -190,7 +190,3 @@ footer {
 }
 
 
-footer {
-  position: fixed;
-  bottom: 0;
-}
