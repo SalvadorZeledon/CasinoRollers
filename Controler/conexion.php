@@ -7,7 +7,10 @@ if ($conn->connect_error) {
     $mensaje = "Error de conexión: " . $conn->connect_error;
 } else {
     $mensaje = "Conexión exitosa";
+
 }
 ?>
+
+
 
 
